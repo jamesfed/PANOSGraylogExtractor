@@ -8,7 +8,7 @@ Tested on Graylog 3.1.2
 
 See https://myworldofit.net/?p=10958 for a screenshot version of this guide.
 
-1. Download the relevant .json file from this repo for your PAN-OS version (only 8.1 and 9.0 supported at this time), open that JSON file up in Notepad (or similar) and copy the contents to clipboard.
+1. Download the relevant .json file from this repo for your PAN-OS version (PAN-OS 8.1 or higher supported), open that JSON file up in Notepad (or similar) and copy the contents to clipboard.
 2. On your Graylog web management console head to System / Inputs > Inputs.
 3. From the list select the 'Manage extractors’ option next to your syslog input.
 4. Click the Actions drop down and select ‘Import extractors’.
