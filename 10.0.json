@@ -1,0 +1,3575 @@
+{
+    "extractors": [
+    {
+        "title": "ReceiveTime",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ReceiveTime",
+        "extractor_config": {
+          "index": 2,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SerialNumber",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SerialNumber",
+        "extractor_config": {
+          "index": 3,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "Type",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Type",
+        "extractor_config": {
+          "index": 4,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "ThreatContentType",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ThreatContentType",
+        "extractor_config": {
+          "index": 5,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "GeneratedTime",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "GeneratedTime",
+        "extractor_config": {
+          "index": 7,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SourceAddress",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceAddress",
+        "extractor_config": {
+          "index": 8,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DestinationAddress",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationAddress",
+        "extractor_config": {
+          "index": 9,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "NATSource_IP",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "NATSource_IP",
+        "extractor_config": {
+          "index": 10,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "NATDestination_IP",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "NATDestination_IP",
+        "extractor_config": {
+          "index": 11,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "RuleName",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "RuleName",
+        "extractor_config": {
+          "index": 12,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SourceUser",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceUser",
+        "extractor_config": {
+          "index": 13,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DestinationUser",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationUser",
+        "extractor_config": {
+          "index": 14,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "Application",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Application",
+        "extractor_config": {
+          "index": 15,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "VirtualSystem",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "VirtualSystem",
+        "extractor_config": {
+          "index": 16,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SourceZone",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceZone",
+        "extractor_config": {
+          "index": 17,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DestinationZone",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationZone",
+        "extractor_config": {
+          "index": 18,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "InboundInterface",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "InboundInterface",
+        "extractor_config": {
+          "index": 19,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "OutboundInterface",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "OutboundInterface",
+        "extractor_config": {
+          "index": 20,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "LogAction",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "LogAction",
+        "extractor_config": {
+          "index": 21,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SessionID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SessionID",
+        "extractor_config": {
+          "index": 23,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "RepeatCount",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "RepeatCount",
+        "extractor_config": {
+          "index": 24,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SourcePort",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourcePort",
+        "extractor_config": {
+          "index": 25,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DestinationPort",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationPort",
+        "extractor_config": {
+          "index": 26,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "NATSourcePort",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "NATSourcePort",
+        "extractor_config": {
+          "index": 27,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "NATDestinationPort",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "NATDestinationPort",
+        "extractor_config": {
+          "index": 28,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "Flags",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Flags",
+        "extractor_config": {
+          "index": 29,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "Protocol",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Protocol",
+        "extractor_config": {
+          "index": 30,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "Action",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Action",
+        "extractor_config": {
+          "index": 31,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "Bytes",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Bytes",
+        "extractor_config": {
+          "index": 32,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "BytesSent",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "BytesSent",
+        "extractor_config": {
+          "index": 33,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "BytesReceived",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "BytesReceived",
+        "extractor_config": {
+          "index": 34,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "Packets",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Packets",
+        "extractor_config": {
+          "index": 35,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "StartTime",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "StartTime",
+        "extractor_config": {
+          "index": 36,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "ElapsedTime",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ElapsedTime",
+        "extractor_config": {
+          "index": 37,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "Category",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Category",
+        "extractor_config": {
+          "index": 38,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SequenceNumber",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SequenceNumber",
+        "extractor_config": {
+          "index": 40,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "ActionFlags",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ActionFlags",
+        "extractor_config": {
+          "index": 41,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SourceCountry",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceCountry",
+        "extractor_config": {
+          "index": 42,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DestinationCountry",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationCountry",
+        "extractor_config": {
+          "index": 43,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "PacketsSent",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "PacketsSent",
+        "extractor_config": {
+          "index": 45,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "PacketsReceived",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "PacketsReceived",
+        "extractor_config": {
+          "index": 46,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SessionEndReason",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SessionEndReason",
+        "extractor_config": {
+          "index": 47,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DeviceGroupHierarchyLevel1",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceGroupHierarchyLevel1",
+        "extractor_config": {
+          "index": 48,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DeviceGroupHierarchyLevel2",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceGroupHierarchyLevel2",
+        "extractor_config": {
+          "index": 49,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DeviceGroupHierarchyLevel3",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceGroupHierarchyLevel3",
+        "extractor_config": {
+          "index": 50,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DeviceGroupHierarchyLevel4",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceGroupHierarchyLevel4",
+        "extractor_config": {
+          "index": 51,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "VirtualSystemName",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "VirtualSystemName",
+        "extractor_config": {
+          "index": 52,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DeviceName",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceName",
+        "extractor_config": {
+          "index": 53,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "ActionSource",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ActionSource",
+        "extractor_config": {
+          "index": 54,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SourceVMUUID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceVMUUID",
+        "extractor_config": {
+          "index": 55,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DestinationVMUUID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationVMUUID",
+        "extractor_config": {
+          "index": 56,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "TunnelIDIMSI",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "TunnelIDIMSI",
+        "extractor_config": {
+          "index": 57,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "MonitorTagIMEI",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "MonitorTagIMEI",
+        "extractor_config": {
+          "index": 58,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "ParentSessionID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ParentSessionID",
+        "extractor_config": {
+          "index": 59,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "ParentStartTime",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ParentStartTime",
+        "extractor_config": {
+          "index": 60,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "TunnelType",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "TunnelType",
+        "extractor_config": {
+          "index": 61,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SCTPAssociationID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SCTPAssociationID",
+        "extractor_config": {
+          "index": 62,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SCTPChunks",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SCTPChunks",
+        "extractor_config": {
+          "index": 63,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SCTPChunksSent",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SCTPChunksSent",
+        "extractor_config": {
+          "index": 64,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SCTPChunksReceived",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SCTPChunksReceived",
+        "extractor_config": {
+          "index": 65,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "RuleUUID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "RuleUUID",
+        "extractor_config": {
+          "index": 66,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "HTTP2Connection",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "HTTP2Connection",
+        "extractor_config": {
+          "index": 67,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "LinkChangeCount",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "LinkChangeCount",
+        "extractor_config": {
+          "index": 68,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "PolicyID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "PolicyID",
+        "extractor_config": {
+          "index": 69,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "LinkSwitches",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "LinkSwitches",
+        "extractor_config": {
+          "index": 70,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SD-WANCluster",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SD-WANCluster",
+        "extractor_config": {
+          "index": 71,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SD-WANDeviceType",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SD-WANDeviceType",
+        "extractor_config": {
+          "index": 72,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SD-WANClusterType",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SD-WANClusterType",
+        "extractor_config": {
+          "index": 73,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SD-WANSite",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SD-WANSite",
+        "extractor_config": {
+          "index": 74,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DynamicUserGroupName",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DynamicUserGroupName",
+        "extractor_config": {
+          "index": 75,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "XFFAddress",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "XFFAddress",
+        "extractor_config": {
+          "index": 76,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SourceDeviceCategory",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceDeviceCategory",
+        "extractor_config": {
+          "index": 77,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SourceDeviceProfile",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceDeviceProfile",
+        "extractor_config": {
+          "index": 78,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SourceDeviceModel",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceDeviceModel",
+        "extractor_config": {
+          "index": 79,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SourceDeviceVendor",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceDeviceVendor",
+        "extractor_config": {
+          "index": 80,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SourceDeviceOSFamily",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceDeviceOSFamily",
+        "extractor_config": {
+          "index": 81,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SourceDeviceOSVersion",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceDeviceOSVersion",
+        "extractor_config": {
+          "index": 82,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SourceHostname",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceHostname",
+        "extractor_config": {
+          "index": 83,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SourceMacAddress",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceMacAddress",
+        "extractor_config": {
+          "index": 84,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DestinationDeviceCategory",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationDeviceCategory",
+        "extractor_config": {
+          "index": 85,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DestinationDeviceProfile",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationDeviceProfile",
+        "extractor_config": {
+          "index": 86,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DestinationDeviceModel",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationDeviceModel",
+        "extractor_config": {
+          "index": 87,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DestinationDeviceVendor",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationDeviceVendor",
+        "extractor_config": {
+          "index": 88,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DestinationDeviceOSFamily",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationDeviceOSFamily",
+        "extractor_config": {
+          "index": 89,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DestinationDeviceOSVersion",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationDeviceOSVersion",
+        "extractor_config": {
+          "index": 90,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DestinationHostname",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationHostname",
+        "extractor_config": {
+          "index": 91,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DestinationMacAddress",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationMacAddress",
+        "extractor_config": {
+          "index": 92,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "ContainerID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ContainerID",
+        "extractor_config": {
+          "index": 93,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "PODNamespace",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "PODNamespace",
+        "extractor_config": {
+          "index": 94,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "PODName",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "PODName",
+        "extractor_config": {
+          "index": 95,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SourceExternalDynamicList",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceExternalDynamicList",
+        "extractor_config": {
+          "index": 96,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DestinationExternalDynamicList",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationExternalDynamicList",
+        "extractor_config": {
+          "index": 97,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "HostID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "HostID",
+        "extractor_config": {
+          "index": 98,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SerialNumber",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SerialNumber",
+        "extractor_config": {
+          "index": 99,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SourceDynamicAddressGroup",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceDynamicAddressGroup",
+        "extractor_config": {
+          "index": 100,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "DestinationDynamicAddressGroup",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationDynamicAddressGroup",
+        "extractor_config": {
+          "index": 101,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "SessionOwner",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SessionOwner",
+        "extractor_config": {
+          "index": 102,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "HighResolutionTimestamp",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "HighResolutionTimestamp",
+        "extractor_config": {
+          "index": 103,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "ASliceServiceType",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ASliceServiceType",
+        "extractor_config": {
+          "index": 104,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "ASliceDifferentiator",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ASliceDifferentiator",
+        "extractor_config": {
+          "index": 105,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",TRAFFIC,"
+      },
+    {
+        "title": "ReceiveTime",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ReceiveTime",
+        "extractor_config": {
+          "index": 2,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SerialNumber",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SerialNumber",
+        "extractor_config": {
+          "index": 3,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "Type",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Type",
+        "extractor_config": {
+          "index": 4,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "ThreatContentType",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ThreatContentType",
+        "extractor_config": {
+          "index": 5,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "GeneratedTime",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "GeneratedTime",
+        "extractor_config": {
+          "index": 7,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SourceAddress",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceAddress",
+        "extractor_config": {
+          "index": 8,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DestinationAddress",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationAddress",
+        "extractor_config": {
+          "index": 9,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "NATSource_IP",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "NATSource_IP",
+        "extractor_config": {
+          "index": 10,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "NATDestination_IP",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "NATDestination_IP",
+        "extractor_config": {
+          "index": 11,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "RuleName",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "RuleName",
+        "extractor_config": {
+          "index": 12,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SourceUser",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceUser",
+        "extractor_config": {
+          "index": 13,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DestinationUser",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationUser",
+        "extractor_config": {
+          "index": 14,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "Application",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Application",
+        "extractor_config": {
+          "index": 15,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "VirtualSystem",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "VirtualSystem",
+        "extractor_config": {
+          "index": 16,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SourceZone",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceZone",
+        "extractor_config": {
+          "index": 17,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DestinationZone",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationZone",
+        "extractor_config": {
+          "index": 18,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "InboundInterface",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "InboundInterface",
+        "extractor_config": {
+          "index": 19,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "OutboundInterface",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "OutboundInterface",
+        "extractor_config": {
+          "index": 20,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "LogAction",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "LogAction",
+        "extractor_config": {
+          "index": 21,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SessionID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SessionID",
+        "extractor_config": {
+          "index": 23,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "RepeatCount",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "RepeatCount",
+        "extractor_config": {
+          "index": 24,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SourcePort",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourcePort",
+        "extractor_config": {
+          "index": 25,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DestinationPort",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationPort",
+        "extractor_config": {
+          "index": 26,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "NATSourcePort",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "NATSourcePort",
+        "extractor_config": {
+          "index": 27,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "NATDestinationPort",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "NATDestinationPort",
+        "extractor_config": {
+          "index": 28,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "Flags",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Flags",
+        "extractor_config": {
+          "index": 29,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "_IPProtocol",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "_IPProtocol",
+        "extractor_config": {
+          "index": 30,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "Action",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Action",
+        "extractor_config": {
+          "index": 31,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "URLFilename",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "URLFilename",
+        "extractor_config": {
+          "index": 32,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "ThreatID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ThreatID",
+        "extractor_config": {
+          "index": 33,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "Category",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Category",
+        "extractor_config": {
+          "index": 34,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "Severity",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Severity",
+        "extractor_config": {
+          "index": 35,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "Direction",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Direction",
+        "extractor_config": {
+          "index": 36,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SequenceNumber",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SequenceNumber",
+        "extractor_config": {
+          "index": 37,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "ActionFlags",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ActionFlags",
+        "extractor_config": {
+          "index": 38,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SourceLocation",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceLocation",
+        "extractor_config": {
+          "index": 39,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DestinationLocation",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationLocation",
+        "extractor_config": {
+          "index": 40,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "ContentType",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ContentType",
+        "extractor_config": {
+          "index": 42,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "PCAPID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "PCAPID",
+        "extractor_config": {
+          "index": 43,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "FileDigest",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "FileDigest",
+        "extractor_config": {
+          "index": 44,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "Cloud",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Cloud",
+        "extractor_config": {
+          "index": 45,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "URLIndex",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "URLIndex",
+        "extractor_config": {
+          "index": 46,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "UserAgent",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "UserAgent",
+        "extractor_config": {
+          "index": 47,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "FileType",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "FileType",
+        "extractor_config": {
+          "index": 48,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "X-Forwarded-For",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "X-Forwarded-For",
+        "extractor_config": {
+          "index": 49,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "Referer",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Referer",
+        "extractor_config": {
+          "index": 50,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "Sender",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Sender",
+        "extractor_config": {
+          "index": 51,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "Subject",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Subject",
+        "extractor_config": {
+          "index": 52,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "Recipient",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Recipient",
+        "extractor_config": {
+          "index": 53,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "ReportID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ReportID",
+        "extractor_config": {
+          "index": 54,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DeviceGroupHierarchyLevel1",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceGroupHierarchyLevel1",
+        "extractor_config": {
+          "index": 55,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DeviceGroupHierarchyLevel2",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceGroupHierarchyLevel2",
+        "extractor_config": {
+          "index": 56,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DeviceGroupHierarchyLevel3",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceGroupHierarchyLevel3",
+        "extractor_config": {
+          "index": 57,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DeviceGroupHierarchyLevel4",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceGroupHierarchyLevel4",
+        "extractor_config": {
+          "index": 58,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "VirtualSystemName",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "VirtualSystemName",
+        "extractor_config": {
+          "index": 59,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DeviceName",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceName",
+        "extractor_config": {
+          "index": 60,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SourceVMUUID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceVMUUID",
+        "extractor_config": {
+          "index": 62,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DestinationVMUUID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationVMUUID",
+        "extractor_config": {
+          "index": 63,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "HTTPMethod",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "HTTPMethod",
+        "extractor_config": {
+          "index": 64,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "TunnelIDIMSI",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "TunnelIDIMSI",
+        "extractor_config": {
+          "index": 65,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "MonitorTagIMEI",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "MonitorTagIMEI",
+        "extractor_config": {
+          "index": 66,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "ParentSessionID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ParentSessionID",
+        "extractor_config": {
+          "index": 67,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "ParentStartTime",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ParentStartTime",
+        "extractor_config": {
+          "index": 68,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "TunnelType",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "TunnelType",
+        "extractor_config": {
+          "index": 69,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "ThreatCategory",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ThreatCategory",
+        "extractor_config": {
+          "index": 70,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "ContentVersion",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ContentVersion",
+        "extractor_config": {
+          "index": 71,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SCTPAssociationID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SCTPAssociationID",
+        "extractor_config": {
+          "index": 73,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "PayloadProtocolID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "PayloadProtocolID",
+        "extractor_config": {
+          "index": 74,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "HTTPHeaders",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "HTTPHeaders",
+        "extractor_config": {
+          "index": 75,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "URLCategoryList",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "URLCategoryList",
+        "extractor_config": {
+          "index": 76,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "RuleUUID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "RuleUUID",
+        "extractor_config": {
+          "index": 77,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "HTTP2Connection",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "HTTP2Connection",
+        "extractor_config": {
+          "index": 78,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DynamicUserGroupName",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DynamicUserGroupName",
+        "extractor_config": {
+          "index": 79,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "XFFAddress",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "XFFAddress",
+        "extractor_config": {
+          "index": 80,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SourceDeviceCategory",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceDeviceCategory",
+        "extractor_config": {
+          "index": 81,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SourceDeviceProfile",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceDeviceProfile",
+        "extractor_config": {
+          "index": 82,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SourceDeviceModel",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceDeviceModel",
+        "extractor_config": {
+          "index": 83,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SourceDeviceVendor",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceDeviceVendor",
+        "extractor_config": {
+          "index": 84,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SourceDeviceOSFamily",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceDeviceOSFamily",
+        "extractor_config": {
+          "index": 85,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SourceDeviceOSVersion",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceDeviceOSVersion",
+        "extractor_config": {
+          "index": 86,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SourceHostname",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceHostname",
+        "extractor_config": {
+          "index": 87,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SourceMACAddress",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceMACAddress",
+        "extractor_config": {
+          "index": 88,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DestinationDeviceCategory",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationDeviceCategory",
+        "extractor_config": {
+          "index": 89,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DestinationDeviceProfile",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationDeviceProfile",
+        "extractor_config": {
+          "index": 90,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DestinationDeviceModel",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationDeviceModel",
+        "extractor_config": {
+          "index": 91,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DestinationDeviceVendor",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationDeviceVendor",
+        "extractor_config": {
+          "index": 92,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DestinationDeviceOSFamily",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationDeviceOSFamily",
+        "extractor_config": {
+          "index": 93,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DestinationDeviceOSVersion",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationDeviceOSVersion",
+        "extractor_config": {
+          "index": 94,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DestinationHostname",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationHostname",
+        "extractor_config": {
+          "index": 95,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DestinationMACAddress",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationMACAddress",
+        "extractor_config": {
+          "index": 96,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SourceExternalDynamicList",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SourceExternalDynamicList",
+        "extractor_config": {
+          "index": 97,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DestinationExternalDynamicList",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DestinationExternalDynamicList",
+        "extractor_config": {
+          "index": 98,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "HostID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "HostID",
+        "extractor_config": {
+          "index": 99,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "SerialNumber",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SerialNumber",
+        "extractor_config": {
+          "index": 100,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "DomainEDL",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DomainEDL",
+        "extractor_config": {
+          "index": 101,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "HighResolutionTimestamp",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "HighResolutionTimestamp",
+        "extractor_config": {
+          "index": 102,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",THREAT,"
+      },
+    {
+        "title": "ReceiveTime",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ReceiveTime",
+        "extractor_config": {
+          "index": 2,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "SerialNumber",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SerialNumber",
+        "extractor_config": {
+          "index": 3,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "Type",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Type",
+        "extractor_config": {
+          "index": 4,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "Subtype",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Subtype",
+        "extractor_config": {
+          "index": 5,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "GeneratedTime",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "GeneratedTime",
+        "extractor_config": {
+          "index": 7,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "Host",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Host",
+        "extractor_config": {
+          "index": 8,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "VirtualSystem",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "VirtualSystem",
+        "extractor_config": {
+          "index": 9,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "Command",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Command",
+        "extractor_config": {
+          "index": 10,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "Admin",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Admin",
+        "extractor_config": {
+          "index": 11,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "Client",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Client",
+        "extractor_config": {
+          "index": 12,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "Result",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Result",
+        "extractor_config": {
+          "index": 13,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "ConfigurationPath",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ConfigurationPath",
+        "extractor_config": {
+          "index": 14,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "BeforeChangeDetail",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "BeforeChangeDetail",
+        "extractor_config": {
+          "index": 15,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "AfterChangeDetail",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "AfterChangeDetail",
+        "extractor_config": {
+          "index": 16,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "SequenceNumber",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SequenceNumber",
+        "extractor_config": {
+          "index": 17,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "ActionFlags",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ActionFlags",
+        "extractor_config": {
+          "index": 18,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "DeviceGroupHierarchyLevel1",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceGroupHierarchyLevel1",
+        "extractor_config": {
+          "index": 19,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "DeviceGroupHierarchyLevel2",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceGroupHierarchyLevel2",
+        "extractor_config": {
+          "index": 20,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "DeviceGroupHierarchyLevel3",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceGroupHierarchyLevel3",
+        "extractor_config": {
+          "index": 21,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "DeviceGroupHierarchyLevel4",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceGroupHierarchyLevel4",
+        "extractor_config": {
+          "index": 22,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "VirtualSystemName",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "VirtualSystemName",
+        "extractor_config": {
+          "index": 23,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "DeviceName",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceName",
+        "extractor_config": {
+          "index": 24,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",CONFIG,"
+      },
+    {
+        "title": "ReceiveTime",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ReceiveTime",
+        "extractor_config": {
+          "index": 2,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "SerialNumber",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SerialNumber",
+        "extractor_config": {
+          "index": 3,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "Type",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Type",
+        "extractor_config": {
+          "index": 4,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "ContentThreatType",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ContentThreatType",
+        "extractor_config": {
+          "index": 5,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "GeneratedTime",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "GeneratedTime",
+        "extractor_config": {
+          "index": 7,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "VirtualSystem",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "VirtualSystem",
+        "extractor_config": {
+          "index": 8,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "EventID",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "EventID",
+        "extractor_config": {
+          "index": 9,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "Object",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Object",
+        "extractor_config": {
+          "index": 10,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "Module",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Module",
+        "extractor_config": {
+          "index": 13,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "Severity",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Severity",
+        "extractor_config": {
+          "index": 14,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "Description",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "Description",
+        "extractor_config": {
+          "index": 15,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "SequenceNumber",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "SequenceNumber",
+        "extractor_config": {
+          "index": 16,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "ActionFlags",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "ActionFlags",
+        "extractor_config": {
+          "index": 17,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "DeviceGroupHierarchyLevel1",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceGroupHierarchyLevel1",
+        "extractor_config": {
+          "index": 18,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "DeviceGroupHierarchyLevel2",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceGroupHierarchyLevel2",
+        "extractor_config": {
+          "index": 19,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "DeviceGroupHierarchyLevel3",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceGroupHierarchyLevel3",
+        "extractor_config": {
+          "index": 20,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "DeviceGroupHierarchyLevel4",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceGroupHierarchyLevel4",
+        "extractor_config": {
+          "index": 21,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "VirtualSystemName",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "VirtualSystemName",
+        "extractor_config": {
+          "index": 22,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "DeviceName",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "DeviceName",
+        "extractor_config": {
+          "index": 23,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      },
+    {
+        "title": "HighResolutionTimestamp",
+        "extractor_type": "split_and_index",
+        "converters": [],
+        "order": 0,
+        "cursor_strategy": "copy",
+        "source_field": "message",
+        "target_field": "HighResolutionTimestamp",
+        "extractor_config": {
+          "index": 26,
+          "split_by": ","
+        },
+        "condition_type": "string",
+        "condition_value": ",SYSTEM,"
+      }
+],
+"version": "3.1.2"
+}
